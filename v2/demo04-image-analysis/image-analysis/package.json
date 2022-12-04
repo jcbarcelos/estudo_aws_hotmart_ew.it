@@ -1,0 +1,21 @@
+{
+  "name": "image-analysis",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "invoke": "sls invoke -f img-analysis",
+    "invoke:local": "sls invoke local -f img-analysis",
+    "test": "jest",
+    "test:watch": "jest --watchAll --detectOpenHandles"
+  },
+  "dependencies": {
+    "aws-sdk": "2.1128",
+    "axios": "0.17",
+    "ntl": "^5.1.0"
+  },
+  "devDependencies": {
+    "jest": "28",
+    "serverless": "3.16"
+  }
+}
